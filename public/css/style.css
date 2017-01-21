@@ -1,0 +1,131 @@
+/*MAIN CSS DOCUMENT*/
+
+/*FONTS*/
+@font-face {
+    font-family: 'game_of_thronesregular';
+    src: url('../fonts/gameOfThrones/game_of_thrones-webfont.woff2') format('woff2'),
+         url('../fonts/gameOfThrones/game_of_thrones-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*GLOBAL*/
+body {
+  background-color: #333;
+}
+
+.container {
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+/*HEADER*/
+header {
+  margin: 25px 0;
+  width: 75%;
+  float: right;
+}
+
+.title {
+  color: rgba(0,0,0,0.3);
+  font-size: 60px;
+  text-align: center;
+  font-family: 'game_of_thronesregular', Times, Serif;
+}
+
+/*CHARACTER LIST*/
+
+.charList {
+  width: 25%;
+  float: left;
+  padding-top: 5vh;
+  height: 95vh;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.charList h2 {
+  color: #333;
+  font-family: 'game_of_thronesregular', Times, Serif;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.charList ul li {
+border-bottom: 1px solid rgba(255,255,255,0.4);
+}
+
+.charList ul li:first-child {
+  border-top: 1px solid rgba(255,255,255,0.4);
+}
+
+.charList ul li a {
+  text-decoration: none;
+  /*border-bottom: 1px solid #fff;*/
+  padding: 15px 25px;
+  display: block;
+  color: #fff;
+  font-size: 20px;
+  transition: all 0.5s ease-out;
+}
+
+.charList ul li a:hover {
+  background-color: rgba(0,0,0,0.2);
+  color: rgba(255,255,255,0.5);
+}
+
+/*DETAILS*/
+#results {
+  width: 70%;
+  float: right;
+  margin: 0 2.5%;
+  overflow: hidden;
+}
+
+.details {
+  width: 77.5%;
+  margin-left: 2.5%;
+  float: right;
+}
+
+#banner {
+  width: 20%;
+  float: left;
+}
+
+#results p {
+  color: #fff;
+  font-family: Arial, Helvetica, Sans-Serif;
+}
+
+#name p {
+  font-family: 'game_of_thronesregular', Times, Serif;
+  font-size: 50px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+#dim {
+  color: rgba(255,255,255,0.5);
+}
+
+#actor p, #house p {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+#description p {
+  line-height: 20px;
+}
+
+#photo {
+  height: 50vh;
+  margin-top: 20px;
+}
